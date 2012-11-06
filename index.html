@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<title></title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="description" content="Administration interface for the social recommender"/>
+		<meta name="author" content="Lennart Weller"/>
+		<link href="css/bootstrap.min.css" rel="stylesheet"/>
+		<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+
+		<style type="text/css">
+			#map { width:100%; height:300px;}
+			#map img { max-width:none; }
+		</style>
+	</head>
+	<body>
+
+	<!-- Navigation -->
+  	<div class="navbar navbar-fixed-top">
+  	  <div class="navbar-inner">
+  	    <a class="brand" href="#"><img src="logo.png" alt=""></a>
+  	    <ul class="nav pull-right">
+  	      <li><a class="active" href="#chaostreff">Chaostreff</a></li>
+  	      <li><a href="#meetings">Treffen</a></li>
+  	      <li><a href="#location">Ort</a></li>
+  	      <li><a href="#contact">Kontakt</a></li>
+  	    </ul>
+  	  </div>
+  	</div>
+
+	<div id="main" class="container">
+		<div id="logo" class="hero-unit" style="margin-top:5%">
+			<div class="row">
+				<div class="span4">
+					<img src="logo.png" width="200px" height="200px" />
+				</div>
+				<div class="span6" style="font-variant:small-caps">
+					<h1 style="margin-top:10%">C<sub>haos</sub> C<sub>omputer</sub> C<sub>lub</sub></h1>
+					<h2 style="margin-left:3%">Chaostreff Oldenburg</h2>
+				</div>
+			</div>
+		</div>
+		<div id="chaostreff" class="hero-unit">
+			<h2 style="margin-top:-5%">Chaostreff</h2>
+			<hr />
+		</div>
+		<div id="meetings" class="hero-unit">
+			<h2 style="margin-top:-5%">Treffen</h2>
+			<hr />
+		</div>
+		<div id="location" class="hero-unit">
+			<h2 style="margin-top:-5%">Ort</h2>
+			<hr />
+			<div class="row" style="margin-bottom:3%">
+				<div class="span3" >
+					<object style="margin-left:40%;margin-top:20%" data="img/location.svg" type="image/svg+xml"></object>
+				</div>
+				<div class="span3" style="border-left: 1px solid gray;min-height:150px;padding-left:20px;padding-top:5em">
+					<span style="font-size:1.5em;">
+						<strong>Mainframe</strong><br />
+						Raiffaisenstraße 27<br/>
+						26122 Oldenburg
+					</span>
+				</div>
+				<div class="span3" style="min-height:150px;padding-left:20px;padding-top:4em">
+					<span style="font-size:1.5em;">
+						<strong>Öffnungszeiten:</strong>
+						<ul>
+							<li>Mo, Di, Mi, Do, Fr 18 bis 23 Uhr</li>
+							<li>Sa, So 17 bis Open End</li>
+							<li>Momentaner <a href="http://status.kreativitaet-trifft-technik.de/">Status</a></li>
+						</ul>
+					</span>
+
+				</div>
+			</div>
+			<div id="map"></div>
+		</div>
+		<div id="contact" class="hero-unit">
+			<h2 style="margin-top:-5%">Kontakt</h2>
+			<hr />
+		</div>
+	</div>
+		
+	</body>
+	<!-- Bootstrap -->
+	<script src="js/jquery-1.8.1.js"></script>
+	<script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jQuery.scrollTo.min.js"></script>
+	<script src="js/jQuery.localScrollTo.js"></script>
+
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {	
+			//Smooth scrolling
+			$('.navbar-fixed-top .nav').localScroll({
+				queue:true,
+				duration:1000,
+				hash:true,
+				onBefore:function(e, anchor, $target){},
+				onAfter:function(anchor, settings){}
+			});
+			map = new OpenLayers.Map("map");
+			map.addLayer(new OpenLayers.Layer.OSM());
+			var coordinate = new OpenLayers.LonLat(8.2150768, 53.1450566).transform(
+				new OpenLayers.Projection("EPSG:4326"),
+				map.getProjectionObject()
+			);
+			var markers = new OpenLayers.Layer.Markers("Markers");
+			map.addLayer(markers);
+			markers.addMarker(new OpenLayers.Marker(coordinate));
+			map.setCenter(coordinate, 17);
+		});
+	 </script>
+	
+</html>
+
