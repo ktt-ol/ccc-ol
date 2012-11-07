@@ -25,7 +25,7 @@
   	      <li><a class="active" href="#chaostreff">Chaostreff</a></li>
   	      <li><a href="#meetings">Treffen</a></li>
   	      <li><a href="#location">Ort</a></li>
-  	      <li><a href="#contact">Kontakt</a></li>
+  	      <li><a href="#contact">Mailingliste</a></li>
   	    </ul>
   	  </div>
   	</div>
@@ -43,44 +43,91 @@
 			</div>
 		</div>
 		<div id="chaostreff" class="hero-unit">
-			<h2 style="margin-top:-5%">Chaostreff</h2>
+			<h2 style="margin-top:-4%">Chaostreff</h2>
 			<hr />
 		</div>
 		<div id="meetings" class="hero-unit">
-			<h2 style="margin-top:-5%">Treffen</h2>
+			<h2 style="margin-top:-4%">Treffen</h2>
 			<hr />
 		</div>
 		<div id="location" class="hero-unit">
-			<h2 style="margin-top:-5%">Ort</h2>
+			<h2 style="margin-top:-4%">Ort</h2>
 			<hr />
 			<div class="row" style="margin-bottom:3%">
 				<div class="span3" >
-					<object style="margin-left:40%;margin-top:20%" data="img/location.svg" type="image/svg+xml"></object>
+					<object style="margin-left:40%;margin-top:25%" data="img/location.svg" type="image/svg+xml"></object>
 				</div>
-				<div class="span3" style="border-left: 1px solid gray;min-height:150px;padding-left:20px;padding-top:5em">
+				<div class="span3" style="border-left: 1px solid gray;min-height:150px;padding-left:40px;padding-top:5em">
 					<span style="font-size:1.5em;">
 						<strong>Mainframe</strong><br />
 						Raiffaisenstraße 27<br/>
 						26122 Oldenburg
 					</span>
 				</div>
-				<div class="span3" style="min-height:150px;padding-left:20px;padding-top:4em">
+				<div class="span4" style="min-height:150px;padding-left:20px;padding-top:5em">
 					<span style="font-size:1.5em;">
 						<strong>Öffnungszeiten:</strong>
-						<ul>
-							<li>Mo, Di, Mi, Do, Fr 18 bis 23 Uhr</li>
-							<li>Sa, So 17 bis Open End</li>
-							<li>Momentaner <a href="http://status.kreativitaet-trifft-technik.de/">Status</a></li>
-						</ul>
+						<table>
+							<tr>
+								<td>Montag-Freitag</td>
+								<td>18 bis 23 Uhr</td>
+							</tr>
+							<tr>
+								<td>Samstag-Sonntag</td>
+								<td>17 Uhr bis Open End</td>
+							</tr>
+						</table>
 					</span>
-
 				</div>
 			</div>
 			<div id="map"></div>
 		</div>
 		<div id="contact" class="hero-unit">
-			<h2 style="margin-top:-5%">Kontakt</h2>
+			<h2 style="margin-top:-4%">Mailingliste</h2>
 			<hr />
+			<div class="row">
+				<div class="span3" >
+					<object style="margin-left:30%;margin-top:45%" data="img/email.svg" type="image/svg+xml"></object>
+				</div>
+				<div class="span4" style="border-left: 1px solid gray;padding-left:40px;">
+					<legend>Anmeldung zur Mailingliste</legend>
+					<form method="post" action="http://mailman.kreativitaet-trifft-technik.de/subscribe/chaostreff-ol">
+						<div class="control-group">
+							<label class="control-label" for="inputEmail">E-Mail</label>
+							<div class="controls">
+								<input type="text" class="span3" id="inputEmail" name="email" required="true" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"/>
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="inputPass">Passwort</label>
+							<div class="controls">
+								<input type="password" class="span3" id="inputPass" name="pw" required="true" />
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="inputPass2">Passwort Wiederholung</label>
+							<div class="controls">
+								<input type="password" class="span3" id="inputPass2" name="pw-conf" required="true" />
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="inputName">Name (Optional)</label>
+							<div class="controls">
+								<input type="text" class="span3" id="inputName" name="fullname" />
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="controls">
+								<button type="submit" class="btn btn-primary"><i class="icon-pencil"></i> Anmelden</button>
+								<button type="reset" class="btn btn-danger">Löschen</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="span3">
+					Erläuterung hier
+				</div>
+			</div>
 		</div>
 	</div>
 		
