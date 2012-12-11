@@ -26,6 +26,7 @@
   	      <li><a href="#meetings">Treffen</a></li>
   	      <li><a href="#location">Ort</a></li>
   	      <li><a href="#contact">Mailingliste</a></li>
+		  <li><a href="#links">Links</a></li>
   	    </ul>
   	  </div>
   	</div>
@@ -43,12 +44,19 @@
 			</div>
 		</div>
 		<div id="chaostreff" class="hero-unit">
-			<h2 style="margin-top:-4%">Chaostreff</h2>
+			<h2 style="margin-top:1%">Chaostreff</h2>
 			<hr />
+			Wir sind der <a href="http://www.ccc.de/de/club/chaostreffs" title="Was ist ein Chaostreff?">Chaostreff</a> in Oldenburg.
+			Anfang September 2012 hat sich im Rahmen des Barcamps in dem Kommunikationsbunker Oldenburg mit ca. 23 Personen ein Chaostreff gegründet.
+			Wir treffen uns jeden 1. und 3. Mittwoch des Monats um 19:00 Uhr im <a href="http://www.kreativitaet-trifft-technik.de/mainframe">Mainframe</a> 
+			(Hackspace Oldenburg) in der Raiffeisenstraße 27.
 		</div>
 		<div id="meetings" class="hero-unit">
-			<h2 style="margin-top:-4%">Treffen</h2>
+			<h2 style="margin-top:1%">Treffen</h2>
 			<hr />
+			Bei unserem zweiwöchentlichen Treffen geht es rund um freie Software, besondere Hardware, Eigenbau, Sicherheit, fantastisches Wissen, 
+			geniale Leute und gemütliches Beisamensein, Politik der Zukunft und andere Aktivitäten rund ums Chaos. 
+			Natürlich ist der Eintritt frei! Wir freuen uns auf neue Gesichter und nerdige Diskussionen.
 		</div>
 		<div id="location" class="hero-unit">
 			<h2 style="margin-top:-4%">Ort</h2>
@@ -60,7 +68,7 @@
 				<div class="span3" style="border-left: 1px solid gray;min-height:150px;padding-left:40px;padding-top:5em">
 					<span style="font-size:1.5em;">
 						<strong>Mainframe</strong><br />
-						Raiffaisenstraße 27<br/>
+						Raiffeisenstraße 27<br/>
 						26122 Oldenburg
 					</span>
 				</div>
@@ -83,7 +91,7 @@
 			<div id="map"></div>
 		</div>
 		<div id="contact" class="hero-unit">
-			<h2 style="margin-top:-4%">Mailingliste</h2>
+			<h2 style="margin-top:-2%">Mailingliste</h2>
 			<hr />
 			<div class="row">
 				<div class="span3" >
@@ -125,9 +133,18 @@
 					</form>
 				</div>
 				<div class="span3">
-					Erläuterung hier
+					Für Aktuelles und wichtige Ankündigungen könnt ihr unsere Mailingliste abonnieren: <br/><br/><b>chaostreff-ol@kreativitaet-trifft-technik.de</b>
 				</div>
 			</div>
+		</div>
+		<div id="links"class="hero-unit">
+			<h2 style="margin-top:-4%">Links</h2>
+			<hr />
+				<ul>
+					<li>CCC Bundesverband: <a href="http://www.ccc.de">http://ccc.de</a></li>
+					<li>Nächster Erfa: <a href="http://www.ccchb.de">http://ccchb.de</a></li>
+				</ul>
+				<center><a href="http://events.ccc.de/congress/2012/wiki/Main_Page"><img src="img/29c3.png" alt="29c3"/></a></center>
 		</div>
 	</div>
 		
@@ -150,7 +167,14 @@
 				onAfter:function(anchor, settings){}
 			});
 			map = new OpenLayers.Map("map");
+				
+			// disable zoom via mousewheel
+			controls = map.getControlsByClass('OpenLayers.Control.Navigation');
+			for(var i = 0; i < controls.length; ++i)
+			     controls[i].disableZoomWheel();
+
 			map.addLayer(new OpenLayers.Layer.OSM());
+
 			var coordinate = new OpenLayers.LonLat(8.2150768, 53.1450566).transform(
 				new OpenLayers.Projection("EPSG:4326"),
 				map.getProjectionObject()
@@ -161,6 +185,4 @@
 			map.setCenter(coordinate, 17);
 		});
 	 </script>
-	
 </html>
-
