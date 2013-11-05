@@ -1,0 +1,26 @@
+.countdown {
+	background-image: url(../img/30c3_propaganda_180x270.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	max-width:180px;
+	margin:auto;
+	text-align: center;
+	color:white;
+	font-size:22px;
+	font-weight:100;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+	padding:7px;
+	border:none;
+}
+.countdownElement {
+	font-family:'Source Sans Pro',Helvetica,Arial,Sans-Serif;
+	display: inline-block;
+}
+.foo {
+	/*display:block;*/
+	color:white;
+	font-size:18px;
+}

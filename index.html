@@ -10,6 +10,13 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet"/>
 		<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
 
+		<!-- START 30C3 PROPAGANDA INSERT IN head-AREA -->
+		<!-- 30c3 counter from https://github.com/trailblazr/30c3-countdown-banner-180x270 -->
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200:italic' rel='stylesheet' type='text/css'>
+		<link href='css/30c3counter.css' rel='stylesheet' type='text/css'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<!-- END 30C3 PROPAGANDA INSERT IN head-AREA -->
+
 		<style type="text/css">
 			#map { width:100%; height:350px; margin-bottom:1%;}
 			#map img { max-width:none; }
@@ -144,10 +151,21 @@
 			<h2 style="margin-top:-4%">Links</h2>
 			<hr />
 				<ul>
-					<li>CCC Bundesverband: <a href="https://www.ccc.de">http://ccc.de</a></li>
-					<li>Nächster Erfa: <a href="https://www.ccchb.de">http://ccchb.de</a></li>
+					<li>CCC Bundesverband: <a href="https://www.ccc.de">https://ccc.de</a></li>
+					<li>Nächster Erfa: <a href="https://www.ccchb.de">https://ccchb.de</a></li>
 				</ul>
 			<!--	<center><a href="http://events.ccc.de/congress/2012/wiki/Main_Page"><img src="img/29c3.png" alt="29c3"/></a></center>-->
+
+			<!-- 30c3 counter start-->
+			<div class="countdown" style="width:180px;height:270px;cursor:pointer;" data-targetdate="2013-12-26T15:00Z" onclick="document.location.href='https://events.ccc.de/congress/2013/wiki/Main_Page';" title="Click to get teleported to the 30C3 chaos wiki ...">
+				  <div class="countdownLine" style="margin-top:70px;">
+			<div class="countdownElement"><span class="days">0</span><span class="foo">d </span></div>
+			<div class="countdownElement"><span class="hours">0</span><span class="foo">h </span></div>
+			<div class="countdownElement"><span class="minutes">0</span><span class="foo">m </span></div>
+			<div class="countdownElement"><span class="seconds">0</span><span class="foo">s</span></div>
+			</div>
+			<!-- 30c3 counter end -->
+  </div>
 		</div>
 		<div id="siteinfo" class="hero-unit">
 			<h2 style="margin-top:-4%">Impressum</h2>
@@ -159,9 +177,14 @@
 	</div>
 		
 	</body>
+	<!-- START 30C3 PROPAGANDA LOGIC INSERT AFTER body-TAG -->
+	<script src="js/30c3counter.js"></script>
+	<!-- START 30C3 PROPAGANDA LOGIC INSERT AFTER body-TAG -->
+
 	<!-- Bootstrap -->
 	<script src="js/jquery-1.8.1.js"></script>
 	<script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+	<!--<script src="js/osm/OpenLayers.js"></script>-->
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jQuery.scrollTo.min.js"></script>
 	<script src="js/jQuery.localScrollTo.js"></script>
