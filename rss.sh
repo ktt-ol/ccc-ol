@@ -4,6 +4,7 @@
 
 blogfile="web/blog.html"
 rssfile="web/blog.xml"
+blogdir="blog/"
 
 ## Generate html-blog
 
@@ -11,7 +12,9 @@ rssfile="web/blog.xml"
 cat web/blogHeader.html > $blogfile
 
 # Content
-for file in blog/*.*; do
+filelist=$(ls -t1 $blogdir)
+for file in $filelist; do
+	file=$blogdir$file
 	if [ ${file##*.} = "txt" ] || [ ${file##*.} = "html" ];
 	then
 		title=$(basename $file .${file##*.})
@@ -38,8 +41,10 @@ cat web/blogHeader.xml > $rssfile;
 date=`date +%FT%T%:z`;
 echo '<updated>'$date'</updated>' >> $rssfile;
 
-# Content #TODO write only last 10 in rss feed
-for file in blog/*.*; do
+# Content (newest 10 entries)
+filelist=$(ls -t1 $blogdir | head -10)
+for file in $filelist; do
+	file=$blogdir$file
 	if [ ${file##*.} = "txt" ] || [ ${file##*.} = "html" ];
 	then
 		title=$(basename $file .${file##*.})
