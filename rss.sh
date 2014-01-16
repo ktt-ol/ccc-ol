@@ -1,6 +1,6 @@
 #!/bin/sh
 
-### Searching for txt or html files in blog/ and put them in html und atom-xlm feed ###
+### Searching for txt or html files in blog/ and put them in html and atom-xlm feed ###
 
 blogfile="web/blog.html"
 rssfile="web/blog.xml"
