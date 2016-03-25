@@ -1,4 +1,18 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "https://ccc-ol.de/"
 languageCode = "de-de"
-title = "My New Hugo Site"
+title = "CCC Oldenburg"
 theme = "beautifulhugo"
+pygmentsUseClasses = true
+
+[Params]
+    logo = "img/ccc-ol.svg"
+
+[[menu.main]]
+    name = "Blog"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "About"
+    url = "/page/about/"
+    weight = 2
