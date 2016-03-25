@@ -29,8 +29,8 @@
 				{{ $pag := .Paginate (where .Data.Pages.ByWeight "Type" "block") }}
 				{{ range $pag.Pages }}
 				<div class="row">
-					<h2> {{ .Title }}</h2>
 					<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+						<h2> {{ .Title }}</h2>
 						{{ .Content }}
 					</div>
 				</div>
