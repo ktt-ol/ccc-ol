@@ -4,5 +4,4 @@ weight = 50
 title = "Öffnungszeiten"
 
 +++
-
 In der Regel ab 18 Uhr, siehe [Öffnungsstatus](https://status.kreativitaet-trifft-technik.de/)

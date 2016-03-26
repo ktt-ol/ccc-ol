@@ -4,46 +4,33 @@ weight = 50
 title = "Mailingliste"
 +++
 
-<div class="row">
-	<div class="span3" >
-		<object id="icon_mail" style="margin-left:30%;margin-bottom:10%" data="img/email.svg" type="image/svg+xml"></object>
-	</div>
-	<div class="span4" style="border-left: 1px solid gray;padding-left:40px;">
-		<legend>Anmeldung zur Mailingliste</legend>
-		<form method="post" action="http://mailman.kreativitaet-trifft-technik.de/subscribe/chaostreff-ol">
-			<div class="control-group">
-				<label class="control-label" for="inputEmail">E-Mail</label>
-				<div class="controls">
-					<input type="text" class="span3" id="inputEmail" name="email" required="true" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"/>
-				</div>
-			</div>
-			<div class="control-group">
-				<label class="control-label" for="inputPass">Passwort</label>
-				<div class="controls">
-					<input type="password" class="span3" id="inputPass" name="pw" required="true" />
-				</div>
-			</div>
-			<div class="control-group">
-				<label class="control-label" for="inputPass2">Passwort Wiederholung</label>
-				<div class="controls">
-					<input type="password" class="span3" id="inputPass2" name="pw-conf" required="true" />
-				</div>
-			</div>
-			<div class="control-group">
-				<label class="control-label" for="inputName">Name (Optional)</label>
-				<div class="controls">
-					<input type="text" class="span3" id="inputName" name="fullname" />
-				</div>
-			</div>
-			<div class="control-group">
-				<div class="controls">
-					<button type="submit" class="btn btn-primary"><i class="icon-pencil"></i> Anmelden</button>
-					<button type="reset" class="btn btn-danger">Löschen</button>
-				</div>
-			</div>
-		</form>
-	</div>
-	<div class="span3">
-		Für Aktuelles und wichtige Ankündigungen könnt ihr unsere Mailingliste abonnieren: <br/><br/><b>chaostreff-ol@kreativitaet-trifft-technik.de</b>
-	</div>
-</div>
+<p>
+	Für Aktuelles und wichtige Ankündigungen könnt ihr unsere Mailingliste
+	abonnieren:<br/>
+	<strong>chaostreff-ol@kreativitaet-trifft-technik.de</strong>
+</p>
+<p>
+	<legend>Anmeldung zur Mailingliste</legend>
+	<form method="post" action="http://mailman.kreativitaet-trifft-technik.de/subscribe/chaostreff-ol">
+		<div class="form-group">
+			<label class="form-label" for="inputEmail">E-Mail</label>
+			<input type="email" class="form-control" id="inputEmail" name="email"/>
+		</div>
+		<div class="form-group">
+			<label class="form-label" for="inputPass">Passwort</label>
+			<input type="password" class="form-control" id="inputPass" name="pw" required="true" />
+		</div>
+		<div class="form-group">
+			<label class="form-label" for="inputPass2">Passwort Wiederholung</label>
+			<input type="password" class="form-control" id="inputPass2" name="pw-conf" required="true" />
+		</div>
+		<div class="form-group">
+			<label class="form-label" for="inputName">Name (Optional)</label>
+			<input type="text" class="form-control" id="inputName" name="fullname" />
+		</div>
+		<div class="form-group">
+			<button type="submit" class="btn btn-primary">Anmelden</button>
+			<button type="reset" class="btn btn-danger">Löschen</button>
+		</div>
+	</form>
+</p>

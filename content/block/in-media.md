@@ -2,6 +2,7 @@
 date = "2016-03-25T23:41:29+01:00"
 weight = 70
 title = "Pressespiegel"
+description = "Erwähnungen des Vereins in den Medien"
 
 +++
 * [04.07.2014](http://www.oeins.de/mediathek/vod-stream/?tx_vod_videoondemand%5Bmedia%5D=1613&tx_vod_videoondemand%5Bmediafile%5D=201407041900_ForumPolitik.flv)

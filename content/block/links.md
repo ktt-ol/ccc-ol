@@ -2,6 +2,7 @@
 date = "2016-03-25T23:41:46+01:00"
 weight = 60
 title = "Links"
+description = "Weiterführende Links zu verwandten Vereinen und Organisationen"
 
 +++
 * CCC Bundesverband: [https://www.ccc.de](https://www.ccc.de)
