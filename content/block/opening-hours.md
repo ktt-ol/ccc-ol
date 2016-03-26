@@ -5,4 +5,8 @@ title = "Öffnungszeiten"
 description = "Für den Mainframe"
 
 +++
-In der Regel ab 18 Uhr, siehe [Öffnungsstatus](https://status.mainframe.io/)
+In der Regel ist der Mainframe geöffnet ab 18 Uhr.
+Für genauere Informationen können sie hier nachsehen: [Öffnungsstatus](https://status.mainframe.io/openStats)
+
+Momentan ist der Mainframe:
+<img width="25%" src="https://www.kreativitaet-trifft-technik.de/media/img/mainframe-closed.svg" id="mainframe-status" />

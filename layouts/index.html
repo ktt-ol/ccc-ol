@@ -62,6 +62,14 @@
 			map.addLayer(markers);
 			markers.addMarker(new OpenLayers.Marker(coordinate));
 			map.setCenter(coordinate, 17);
+
+			//mainframe status
+			$.getJSON("//status.mainframe.io/api/spaceInfo", function(data) {
+				console.log (data["state"]["open"]);
+				if (data["state"]["open"]) {
+					$("#mainframe-status").attr("src", data["state"]["icon"]["open"])
+				}
+			});
 		});
 		</script>
   </body>
