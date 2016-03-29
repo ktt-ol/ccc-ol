@@ -67,7 +67,7 @@
 			$.getJSON("//status.mainframe.io/api/spaceInfo", function(data) {
 				console.log (data["state"]["open"]);
 				if (data["state"]["open"]) {
-					$("#mainframe-status").attr("src", data["state"]["icon"]["open"])
+					$("#mainframe-status").attr("src", "https://www.kreativitaet-trifft-technik.de/media/img/mainframe-open.svg")
 				}
 			});
 		});
