@@ -43,9 +43,10 @@
 
     {{ partial "footer.html" . }}
 
-		<script src="//cdnjs.cloudflare.com/ajax/libs/ol3/3.14.2/ol.js" />
+		<!--<script src="//cdnjs.cloudflare.com/ajax/libs/ol3/3.14.2/ol.js" />-->
 		<script type="text/javascript">
-		jQuery(document).ready(function($) {	
+		jQuery(document).ready(function($) {
+			/*
 			map = new OpenLayers.Map("map");
 
 			// disable zoom via mousewheel
@@ -68,7 +69,8 @@
 			var markers = new OpenLayers.Layer.Markers("Markers");
 			map.addLayer(markers);
 			markers.addMarker(new OpenLayers.Marker(coordinate));
-			map.setCenter(coordinate, 17);
+			map.setCenter(coordinate, 17);i
+			*/
 
 			//mainframe status
 			$.getJSON("//status.mainframe.io/api/spaceInfo", function(data) {
