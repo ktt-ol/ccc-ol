@@ -5,5 +5,5 @@ title = "Aktionen"
 description = "Informationen zu momentan laufenden Aktionen"
 +++
 
-Berichte über vergangene Aktionen sind in unserem [**Blog**](/blog) zu finden.
+Berichte über vergangene Aktionen sind in unserem [**Blog**](/post) zu finden.
 
