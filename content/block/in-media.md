@@ -2,7 +2,7 @@
 date = "2016-03-25T23:41:29+01:00"
 weight = 60
 title = "Pressespiegel"
-description = "Erwähnungen des Vereins in den Medien"
+description = "Erwähnungen in den Medien"
 
 +++
 |Quelle   |Datum   |Thema   |
