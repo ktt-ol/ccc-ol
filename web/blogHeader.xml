@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-	<link href="http://ccc-ol.de/blog.xml" rel="self" type="application/rss+xml" />
-	<author>
-		<name>Chostreff Oldenburg</name>
-	</author>
-	<title>Blog vom CCC-OL</title>
-	<id>urn:uuid:3779a8af-2f01-417d-9a8a-0230e3e042ac</id>
