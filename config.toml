@@ -1,0 +1,22 @@
+baseurl = "https://ccc-ol.de/"
+languageCode = "de-de"
+title = "CCC Oldenburg"
+theme = "beautifulhugo"
+pygmentsUseClasses = true
+
+[Author]
+  github = "ktt-ol"
+	twitter = "cccoldb"
+
+[Params]
+    logo = "img/ccc-ol.svg"
+
+[[menu.main]]
+    name = "Informationen"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "Blog"
+    url = "/post"
+    weight = 2
