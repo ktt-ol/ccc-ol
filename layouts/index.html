@@ -43,7 +43,7 @@
 
     {{ partial "footer.html" . }}
 
-		<script src="//www.openlayers.org/api/OpenLayers.js"></script>
+		<script src="js/ol.js"></script>
 		<script type="text/javascript">
 		jQuery(document).ready(function($) {	
 			map = new OpenLayers.Map("map");
@@ -67,7 +67,7 @@
 			$.getJSON("//status.mainframe.io/api/spaceInfo", function(data) {
 				console.log (data["state"]["open"]);
 				if (data["state"]["open"]) {
-					$("#mainframe-status").attr("src", data["state"]["icon"]["open"])
+					$("#mainframe-status").attr("src", "https://www.kreativitaet-trifft-technik.de/media/img/mainframe-open.svg")
 				}
 			});
 		});
