@@ -78,6 +78,10 @@
 				if (data["state"]["open"]) {
 					$("#mainframe-status").attr("src", "https://www.kreativitaet-trifft-technik.de/media/img/mainframe-open.svg")
 				}
+				else if (data["state"]["closing"]) {
+					$("#mainframe-status").attr("src", "https://www.kreativitaet-trifft-technik.de/media/img/mainframe-closing.svg")
+					
+				}
 			});
 		});
 		</script>
