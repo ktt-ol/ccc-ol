@@ -43,9 +43,17 @@
 
     {{ partial "footer.html" . }}
 
-		<!--<script src="js/ol.js" />-->
+		<script src="js/ol.js" />
 		<script type="text/javascript">
 		jQuery(document).ready(function($) {
+			map = new ol.Map({
+				target: 'map',
+				layers: [new ol.layer.Tile({source: new ol.source.OSM()})]
+				view: new ol.View({
+					center: ol.proj.fromLonLat([8.22076, 53.14370], "ESPG:4326"),
+					zoom: 17,
+				})
+			});
 			/*
 			map = new OpenLayers.Map("map");
 
