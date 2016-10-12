@@ -43,11 +43,10 @@
 
     {{ partial "footer.html" . }}
 
-		<!--<script src="js/ol.js" />-->
+		<!--<script src="js/OpenLayers.js" />-->
 		<script type="text/javascript">
 		jQuery(document).ready(function($) {
-			/*
-			map = new OpenLayers.Map("map");
+			/*	map = new OpenLayers.Map("map");
 
 			// disable zoom via mousewheel
 			controls = map.getControlsByClass('OpenLayers.Control.Navigation');
@@ -58,8 +57,7 @@
 				[ '//a.tile.openstreetmap.org/${z}/${x}/${y}.png',
 					'//b.tile.openstreetmap.org/${z}/${x}/${y}.png',
 					'//c.tile.openstreetmap.org/${z}/${x}/${y}.png'
-				], 
-				null);
+				], null);
 			map.addLayer(osm);
 
 			var coordinate = new OpenLayers.LonLat(8.22076, 53.14370).transform(
@@ -71,7 +69,6 @@
 			markers.addMarker(new OpenLayers.Marker(coordinate));
 			map.setCenter(coordinate, 17);
 			*/
-
 			//mainframe status
 			$.getJSON("//status.mainframe.io/api/spaceInfo", function(data) {
 				console.log (data["state"]["open"]);
