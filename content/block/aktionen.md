@@ -4,7 +4,7 @@ weight = 20
 title = "Aktionen"
 description = "Informationen zu momentan laufenden Aktionen"
 +++
-* Aktuell treffen wir uns jeden Mittwoch ab 20 Uhr, um [CTF](https://de.wikipedia.org/wiki/Capture_the_Flag#Computersicherheit)-Aufgaben zu lösen. Das gemeinsame Lernen steht dabei im Vordergrund.
+* Aktuell treffen wir uns nach Absprache (Mailingliste) mittwochs ab 20 Uhr, um [CTF](https://de.wikipedia.org/wiki/Capture_the_Flag#Computersicherheit)-Aufgaben zu lösen. Das gemeinsame Lernen steht dabei im Vordergrund.
 
 Berichte über vergangene Aktionen sind in unserem [**Blog**](/post) zu finden.
 
