@@ -7,6 +7,7 @@ description = "Erwähnungen in den Medien"
 +++
 |Quelle   |Datum   |Thema   |
 |---|---|---|
+|[NWZ Online](http://www.nwzonline.de/)|16.06.2020|[Corona-Warn-App](https://www.nwzonline.de/plus-oldenburg-stadt/oldenburg-oldenburger-experte-ueber-anwendung-corona-warn-app-wird-an-diesem-dienstag-vorgestellt_a_50,8,2738700666.html)|
 |[OEins](http://www.oeins.de/home/)|04.07.2014|[Überwachung im Alltag](http://www.oeins.de/mediathek/vod-stream/?tx_vod_videoondemand%5Bmedia%5D=1613&tx_vod_videoondemand%5Bmediafile%5D=201407041900_ForumPolitik.flv)|
 |[NWZ Online](http://www.nwzonline.de/)|20.03.2014|[Darknets](http://www.nwzonline.de/interview/wie-das-spiel-stille-post_a_13,6,1876043902.html)|
 |[NWZ Online](http://www.nwzonline.de/)|15.03.2014|[Daten-Verschlüsselung](http://www.nwzonline.de/oldenburg/wirtschaft/damit-nicht-jeder-mitliest_a_13,6,1581815915.html)|
