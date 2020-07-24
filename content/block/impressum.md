@@ -5,3 +5,4 @@ weight = 80
 description = "Verantwortliche für diese Internetpräsenz"
 +++
 * Chaostreff Oldenburg - webmaster@ccc-ol.de
+* Presseanfragen nehmen wir gerne unter [mailto:presse@ccc-o.de](presse@ccc-ol.de) entgegen.
