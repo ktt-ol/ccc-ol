@@ -53,7 +53,7 @@
 			var toProjection   = new OpenLayers.Projection("EPSG:900913"); // to Spherical Mercator Projection
 
 			var center         = new OpenLayers.LonLat(8.2207, 53.14375).transform(fromProjection, toProjection);
-			var layer          = new OpenLayers.Layer.OSM("OSM", ["//www.kreativitaet-trifft-technik.de/tiles/${z}/${x}/${y}.png"]);
+			var layer          = new OpenLayers.Layer.OSM("OSM", ["//b.tile.openstreetmap.de/${z}/${x}/${y}.png"]);
 
 			map = new OpenLayers.Map("map", { controls: [] });
 			map.addLayer(layer);
