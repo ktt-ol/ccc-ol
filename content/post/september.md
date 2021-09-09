@@ -7,4 +7,4 @@ title = "Treffen im September 21"
 
 Am 21.9.21 findet unser nächstes und erstes Reallive-Treffen seit langem wieder statt.
 Wir treffen uns um 20:20 Uhr im Mainframe am Bahnhof. <br>
-Neugierige und Interessierte sindherzlich willkommen !
+Neugierige und Interessierte sind herzlich willkommen !
