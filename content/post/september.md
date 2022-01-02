@@ -5,6 +5,6 @@ title = "Treffen im Januar 22"
 
 +++
 
-Am 22.1.22 findet unser nächstes Treffen statt.
+Am 04.1.22 findet unser nächstes Treffen statt.
 Wir treffen uns um 20:20 Uhr im Mainframe am Bahnhof. <br>
 Neugierige und Interessierte sind herzlich willkommen !
