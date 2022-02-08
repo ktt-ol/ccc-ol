@@ -1,6 +1,6 @@
 
 
-+++ date = "2022-02-08T09:19:53+01:00" draft = false title = "Treffen im Februar 22"
++++ date = "2022-02-08T09:17:00+01:00" draft = false title = "Treffen im Februar 22"
 
 +++
 
