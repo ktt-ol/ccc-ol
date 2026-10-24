@@ -13,7 +13,7 @@
         {{ $pag := .Paginate (.Data.Pages) }}
         {{ range $pag.Pages }}
         <article class="post-preview">
-          <a href="{{ .Permalink }}">
+          <!--<a href="{{ .Permalink }}"-->
       	  <h2 class="post-title">{{ .Title }}</h2>
       	
       	  {{ if .Description }}
@@ -21,7 +21,7 @@
       	    {{ .Description }}
       	  </h3>
       	  {{ end }}  
-          </a>
+          <!--</a>-->
 
           <p class="post-meta">
             Posted on {{ .Date.Format "January 2, 2006" }}
@@ -29,7 +29,7 @@
         
           <div class="post-entry">
             {{ .Summary }}
-      	  <a href="{{ .Permalink }}" class="post-read-more">[Read&nbsp;More]</a>
+      	  <!--<a href="{{ .Permalink }}" class="post-read-more">[Read&nbsp;More]</a>-->
           </div>
         
          </article>
