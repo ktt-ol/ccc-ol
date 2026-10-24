@@ -16,19 +16,19 @@
       	  <h2 class="post-title">{{ .Title }}</h2>
       	
       	  {{ if .Description }}
-          <a href="{{ .Permalink }}">
       	  <h3 class="post-subtitle">
       	    {{ .Description }}
       	  </h3>
-          </a>
       	  {{ end }}  
-
           <p class="post-meta">
             Posted on {{ .Date.Format "January 2, 2006" }}
           </p>
         
           <div class="post-entry">
+
+          <a href="{{ .Permalink }}">
             {{ .Summary }}
+          </a>
       	  <a href="{{ .Permalink }}" class="post-read-more">[Read&nbsp;More]</a>
           </div>
         
