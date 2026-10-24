@@ -13,8 +13,9 @@
         {{ $pag := .Paginate (.Data.Pages) }}
         {{ range $pag.Pages }}
         <article class="post-preview">
+          <!--<a href="{{ .Permalink }}">-->
       	  <h2 class="post-title">{{ .Title }}</h2>
-      	
+		  <!--</a>-->
       	  {{ if .Description }}
       	  <h3 class="post-subtitle">
       	    {{ .Description }}
@@ -25,10 +26,7 @@
           </p>
         
           <div class="post-entry">
-
-          <a href="{{ .Permalink }}">
             {{ .Summary }}
-          </a>
       	  <a href="{{ .Permalink }}" class="post-read-more">[Read&nbsp;More]</a>
           </div>
         
