@@ -13,15 +13,15 @@
         {{ $pag := .Paginate (.Data.Pages) }}
         {{ range $pag.Pages }}
         <article class="post-preview">
-          <!--<a href="{{ .Permalink }}"-->
       	  <h2 class="post-title">{{ .Title }}</h2>
       	
       	  {{ if .Description }}
+          <a href="{{ .Permalink }}">
       	  <h3 class="post-subtitle">
       	    {{ .Description }}
       	  </h3>
+          </a>
       	  {{ end }}  
-          <!--</a>-->
 
           <p class="post-meta">
             Posted on {{ .Date.Format "January 2, 2006" }}
